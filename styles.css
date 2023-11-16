@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url(./img/fundo.png);
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    width: 800px;
+    padding: 30px;
+    margin: 100px auto 0;
+    background-color: rgb(20, 95, 95);
+    border-radius: 12px;
+}
+
+.input-task {
+    border: none;
+    border-radius: 5px;
+    width: 500px;
+    height: 60px;
+    padding-left: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+    width: 200px;
+    background-color: rgb(7, 96, 19);
+    color: #fff;
+    padding: 0 10px;
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+.list-task {
+    list-style: none;
+    width: 600px;
+    margin-top: 25px;
+}
+
+.task {
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+img {
+    height: 40px;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+.done {
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .caixa-principal {
+        width: 100%;
+    }
+
+    body {
+        width: 100vw;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .button {
+        width: 40%;
+        height: 50px;
+        float: right;
+        font-size: 25px;
+       }
+
+    .input-task {
+
+        width: 60%;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .list-task {
+        width:80%;
+        font-size: 18px;
+    }
+
+    img {
+        height: 40px;
+        opacity: 0.4;
+    }
+}
